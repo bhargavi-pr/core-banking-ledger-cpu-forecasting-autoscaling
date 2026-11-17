@@ -16,14 +16,14 @@ MySQL (customers, accounts, transactions and a per-minute view) -> Python (featu
 - Capstone_Final_Presentation_v3.pptx: project slides
 
 ## How to run
-1. Create the tables and the view in MySQL (database bank_db).
+1. In MySQL Workbench, run 01_schema_mysql.sql and then 02_view_mysql.sql to create the tables and the view (database bank_db).
 2. Put customers.csv, accounts.csv and transactions_inserts.sql in the Data folder (not included because of their size).
 3. Put your MySQL password where the files say MY_PASSWORD.
 4. Run: python load_transactions_mysql_v2.py
 5. Open Capstone_v2.ipynb and run all cells, then refresh the Power BI dashboard.
 
 ## Data note
-The 1,000,000 transactions come from a Kaggle dataset. Their timing, the random load events and the CPU are simulated.
+The 1,000,000 transactions come from a Kaggle dataset (not included because of their size). Their timing, the random load events and the CPU are simulated.
 
 ## Limitations
 Sudden events cannot be predicted. The test period has only 11 overload episodes. The 30-minute forecast alone is not enough, so the 5-, 15- and 30-minute forecasts are combined.
